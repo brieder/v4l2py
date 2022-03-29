@@ -417,6 +417,7 @@ V4L2_PIX_FMT_OV511 = v4l2_fourcc('O', '5', '1', '1')
 V4L2_PIX_FMT_OV518 = v4l2_fourcc('O', '5', '1', '8')
 V4L2_PIX_FMT_STV0680 = v4l2_fourcc('S', '6', '8', '0')
 
+V4L2_PIX_FMT_Z16 = v4l2_fourcc('Z', '1', '6', ' ')
 
 #
 # Format enumeration
