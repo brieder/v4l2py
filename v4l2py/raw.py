@@ -417,6 +417,9 @@ V4L2_PIX_FMT_OV511 = v4l2_fourcc('O', '5', '1', '1')
 V4L2_PIX_FMT_OV518 = v4l2_fourcc('O', '5', '1', '8')
 V4L2_PIX_FMT_STV0680 = v4l2_fourcc('S', '6', '8', '0')
 
+V4L2_PIX_FMT_W10 = v4l2_fourcc('W', '1', '0', ' ')
+V4L2_PIX_FMT_Y8I = v4l2_fourcc('Y', '8', 'I', ' ')
+V4L2_PIX_FMT_Y12I = v4l2_fourcc('Y', '1', '2', 'I')
 V4L2_PIX_FMT_Z16 = v4l2_fourcc('Z', '1', '6', ' ')
 
 #
