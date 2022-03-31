@@ -1966,3 +1966,22 @@ VIDIOC_G_AUDOUT_OLD = _IOWR('V', 49, v4l2_audioout)
 VIDIOC_CROPCAP_OLD = _IOR('V', 58, v4l2_cropcap)
 
 BASE_VIDIOC_PRIVATE = 192
+
+#
+# Media Info
+#
+
+class media_device_info(ctypes.Structure):
+    _fields_ = [
+        ('driver', ctypes.c_char * 16),
+        ('model', ctypes.c_char * 32),
+        ('serial', ctypes.c_char * 40),
+        ('bus_info', ctypes.c_char * 32),
+        ('media_version', ctypes.c_uint32),
+        ('hw_revision', ctypes.c_uint32),
+        ('driver_version', ctypes.c_uint32),
+        ('reserved', ctypes.c_uint32 * 31),
+    ]
+
+#define MEDIA_IOC_DEVICE_INFO _IOWR('|', 0x00, struct media_device_info)
+MEDIA_IOC_DEVICE_INFO = _IOWR('|', 0, media_device_info)
