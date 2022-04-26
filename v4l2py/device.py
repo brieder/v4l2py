@@ -133,6 +133,8 @@ def read_info(fd):
                     break
                 else:
                     raise
+            if fmt.pixelformat == 0: # odroid v4l2 doesn't know Z16
+                continue
             pixel_format = PixelFormat(fmt.pixelformat)
             formats.append(ImageFormat(
                 type=stream_type,
